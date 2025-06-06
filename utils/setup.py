@@ -9,6 +9,5 @@ def init_database():
     if not os.path.exists(Config.DATABASE_FILE):
         with open(Config.DATABASE_FILE, 'w') as f:
             json.dump({ 
-                "users": [],
                 "images": []
             }, f, indent=2) # Contenido de la base de datos JSON al inicio
